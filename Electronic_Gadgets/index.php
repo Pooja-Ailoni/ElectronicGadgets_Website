@@ -80,7 +80,7 @@ if(isset($_POST['cart']))
           $res=mysqli_query($conn,"select * from smartphone");
         while($row=mysqli_fetch_array($res)){?>
         <div class="col-sm-3 mb-4">
-            <div class="card-mb-3" style="width: 18rem;">
+            <div class="card-mb-3" style="width: 18rem;margin: 0 auto; float: none;margin-bottom: 10px;">
                 <img src="<?php echo $row['Image']?>" class="card-img-top" alt="..."/>
                 <div class="card-body">
                      <h5 class="card-title"><?php echo $row['Brand']?></h5>
@@ -116,7 +116,7 @@ if(isset($_POST['cart']))
           $res=mysqli_query($conn,"select * from laptop");
         while($row=mysqli_fetch_array($res)){?>
         <div class="col-sm-3 mb-4">
-            <div class="card-mb-3" style="width: 18rem;">
+            <div class="card-mb-3" style="width: 18rem;margin: 0 auto; float: none;margin-bottom: 10px;">
                 <img src="<?php echo $row['Image']?>" class="card-img-top" alt="..."/>
                 <div class="card-body">
                      <h5 class="card-title"><?php echo $row['Brand']?></h5>
@@ -153,7 +153,7 @@ if(isset($_POST['cart']))
           $res=mysqli_query($conn,"select * from tv");
         while($row=mysqli_fetch_array($res)){?>
         <div class="col-sm-3 mb-4">
-            <div class="card-mb-3" style="width: 18rem;">
+            <div class="card-mb-3" style="width: 18rem;margin: 0 auto; float: none;margin-bottom: 10px;">
                 <img src="<?php echo $row['Image']?>" class="card-img-top" alt="..."/>
                 <div class="card-body">
                      <h5 class="card-title"><?php echo $row['Brand']?></h5>
@@ -190,7 +190,7 @@ if(isset($_POST['cart']))
           $res=mysqli_query($conn,"select * from powerbank");
         while($row=mysqli_fetch_array($res)){?>
         <div class="col-sm-3 mb-4">
-            <div class="card-mb-3" style="width: 18rem;">
+            <div class="card-mb-3" style="width: 18rem;margin: 0 auto; float: none;margin-bottom: 10px;">
                 <img src="<?php echo $row['Image']?>" class="card-img-top" alt="..."/>
                 <div class="card-body">
                      <h5 class="card-title"><?php echo $row['Brand']?></h5>
