@@ -20,8 +20,7 @@
      <div class="row">
 		<?php
          $res=mysqli_query($conn,"select * from cart");
-         $row=mysqli_fetch_array($res);
-         if($row==0){
+         if(!$res){
          ?>
          	<h1 class="text-center text-capitalize pt-5 pb-5" style="font-family: 'Helvetica', serif;">No Products are Selected</h1>
          <?php
