@@ -15,7 +15,7 @@ if(isset($_POST['upload'])) {
 	$sql = "INSERT INTO smartphone(Image,Brand,Ram,Height,Battery,Price,Storage) VALUES(?,?,?,?,?,?,?);";
 	if($stmt = $conn->prepare($sql))
 	{
-    	$stmt->bind_param("ssidiii",$image,$brand,$ram,$height,$battery,$price,$storage);
+    	$stmt->bind_param("sssdsis",$image,$brand,$ram,$height,$battery,$price,$storage);
     	$stmt->execute();
    	 	echo "Records inserted successfully.";
  	} 
