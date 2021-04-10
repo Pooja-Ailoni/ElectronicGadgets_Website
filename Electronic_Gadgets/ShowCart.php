@@ -53,7 +53,7 @@
 		<div class="row">
 			<div class="col-12">
 			<?php
-        		 $res=mysqli_query($conn,"select sum(Price) as Totalcost from cart");	
+        		 $res=mysqli_query($conn,"select sum(Price*Quantity) as Totalcost from cart");	
         		 $row=mysqli_fetch_array($res);?>
         		 <h2 class="text-center text-capitalize pt-5 pb-5" style="font-family: 'Helvetica', serif;">Total Cost: Rs.<?php echo $row['Totalcost']?></h2>
         	</div>
