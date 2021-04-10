@@ -35,7 +35,7 @@
          		while($row=mysqli_fetch_array($res)){
          ?>
          <div class="col-sm-3 mb-4">
-            <div class="card-mb-3" style="width:20rem;">
+            <div class="card-mb-3" style="width:16rem;">
                 <img src="<?php echo $row['Image']?>" class="card-img-top" alt="..."/>
                 <div class="card-body">
                      <h5 class="card-title"><?php echo $row['Name']?></h5>
@@ -58,7 +58,7 @@
         		 <h2 class="text-center text-capitalize pt-5 pb-5" style="font-family: 'Helvetica', serif;">Total Cost: Rs.<?php echo $row['Totalcost']?></h2>
         	</div>
         	<div class="col-12 text-center">
-        	<form action="home.php">
+        	<form action="index.php">
 				<input type="submit" class="btn btn-primary" value="Continue Shopping">
 			</form>
 		</div>
